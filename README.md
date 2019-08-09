@@ -11,7 +11,7 @@ Python code for sampling and evaluating cycle covers of trees - Joint work with 
   <li> <b>uniform_matching_symbolic.py</b> A method for enumerating the k-Stirling numbers of trees using a permanent-determinant approach. </li>
   <li> <b>spanning_tree_metrics.py</b> An implementation of an MCMC version of the cycle basis walk on spanning trees with Metropolis-Hastings for interpolating between stars and paths.  </li>
   <li><b>TreeLearning-Classification--{Radius or Diameter}-{number of classes}Classes.ipynb</b> These Jupyter notebooks use tree-based machine learning methods to classify trees (into either 2 or 3 classes) with the Stirling numbers of the first kind as predictors. To what class a tree belongs depends on its radius (or diameter).</li>
-  <li><b>TreeList_test_{<i>n</i>}_{<i>N</i>}.pkl</b> Pickled trees where each tree has <i>n</i> vertices and there are <i>N</i> trees in each training and testing set. </li>
+  <li><b>TreeList_{train or test}_{<i>n</i>}_{<i>N</i>}.pkl</b> Pickled trees where each tree has <i>n</i> vertices. Moreover, each train (or test) set contains <i>N</i> trees. </li>
   </ul>
   
   
