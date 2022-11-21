@@ -9,7 +9,7 @@ Python code for sampling and evaluating cycle covers of trees.
 
 An implementation of the FKT algorithm for constructing a pfaffian orientation of a planar graph.
 
-### **uniforrm\_matching.py**
+### **uniform\_matching.py**
 
 An implementation of the uniform sampling method from the paper ["Random generation of combinatorial structures from a uniform distribution"](https://www.sciencedirect.com/science/article/pii/030439758690174X), by Jerrum, Valiant, and Vazirani.
 
@@ -42,21 +42,7 @@ This notebook generates the autocorrelation plots for uniform sampling from the 
 
 This Python script is used to generate the autocorrelation plots for $p = 0.1$, $q, r \in \\{0.2, 0.4, 0.6, 0.8\\}$, and $10000000$ iterations for the code in the **Uniform\_Trees--Autocorrelation.ipynb** notebook. Running time for this Python script is very long. 
 
-### **Classification--{Betweenness, Closeness, Stirling, All}--{Full_Set, Sampling}.ipynb**
-
-These Jupyter notebooks use statistical learning methods to classify trees (into two classes: path-like or star-like) with global betweenness centrality (**Betweenness**), global closeness centrality (**Closeness**), the Stirling numbers of the first kind (**Stirling**), or all three (**All**) as predictors. Two different data sets are used in these notebooks: The first data set (**Full_Set**) consists of all non-isomorphic trees of order 15 and the second data set consists of 500 non-isomorphic trees of order 18.
-
-### **Regression--{All, Subset}--{Full_Set, Sampling}.ipynb** and **Regression--Tree--{All, Subset}--{Full_Set, Sampling}.ipynb**
-
-These Jupyter notebooks use statistical learning methods to predict the Stirling numbers of the first kind using $\log10(P (T ; 2, 1))$ (base 10 logarithm of the distinguishing polynomial of $T$ evaluated at $x = 2$ and $y =1$), global closeness centrality, global betweenness centrality, and class as predictors. Since $\log10(P (T ; 2, 1))$ is the main predictor, we also considered the subset of these predictors that excludes $\log10(P (T ; 2, 1))$. 
-
-### **tree\_functions\_2.py**
-
-All the functions defined by the authors and used in the above notebooks are in this file.
-
-## Autocorrelation Plots for Uniform Sampling from the Tree Space
-
-### Global Betweenness Centrality
+#### Global Betweenness Centrality
 
 <center> 
 <table>
@@ -72,7 +58,7 @@ All the functions defined by the authors and used in the above notebooks are in 
 </table>
 </center>
 
-### Global Closeness Centrality
+#### Global Closeness Centrality
 
 <center> 
 <table>
@@ -86,11 +72,21 @@ All the functions defined by the authors and used in the above notebooks are in 
         <td> <img src='https://github.com/drdeford/Stirling_Trees/blob/master/CLS_4.gif' width = '200'> </td>
     </tr>
 </table>
-</center>
+</center> 
 
-## Different Scores for Various Regression and Tree-based Methods
+### **Classification--{Betweenness, Closeness, Stirling, All}--{Full_Set, Sampling}.ipynb**
 
-### Regression
+These Jupyter notebooks use statistical learning methods to classify trees (into two classes: path-like or star-like) with global betweenness centrality (**Betweenness**), global closeness centrality (**Closeness**), the Stirling numbers of the first kind (**Stirling**), or all three (**All**) as predictors. Two different data sets are used in these notebooks: The first data set (**Full_Set**) consists of all non-isomorphic trees of order 15 and the second data set consists of 500 non-isomorphic trees of order 18.
+
+### **Regression--{All, Subset}--{Full_Set, Sampling}.ipynb** and **Regression--Tree--{All, Subset}--{Full_Set, Sampling}.ipynb**
+
+These Jupyter notebooks use statistical learning methods to predict the Stirling numbers of the first kind using $\log10(P (T ; 2, 1))$ (base 10 logarithm of the distinguishing polynomial of $T$ evaluated at $x = 2$ and $y =1$), global closeness centrality, global betweenness centrality, and class as predictors. Since $\log10(P (T ; 2, 1))$ is the main predictor, we also considered the subset of these predictors that excludes $\log10(P (T ; 2, 1))$. 
+
+### **Regression--Data_Visualization--R.ipynb**
+
+This Jupyter notebook in R creates plots for comparing training and testing scores for various regression and tree-based methods used in the notebooks in the previous set of Jupyter notebooks. 
+
+#### Regression
 
 <center> 
 <table>
@@ -103,7 +99,7 @@ All the functions defined by the authors and used in the above notebooks are in 
 </table>
 </center>
 
-### Tree-Based
+#### Tree-Based
 
 <center> 
 <table>
@@ -115,4 +111,7 @@ All the functions defined by the authors and used in the above notebooks are in 
     </tr>  
 </table>
 </center>
-  
+
+### **tree\_functions\_2.py**
+
+All the functions defined by the authors and used in the above notebooks are in this file.
