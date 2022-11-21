@@ -46,9 +46,9 @@ This Python script is used to generate the autocorrelation plots for $p = 0.1$, 
 
 These Jupyter notebooks use statistical learning methods to classify trees (into two classes: path-like or star-like) with global betweenness centrality (**Betweenness**), global closeness centrality (**Closeness**), the Stirling numbers of the first kind (**Stirling**), or all three (**All**) as predictors. Two different data sets are used in these notebooks: The first data set (**Full_Set**) consists of all non-isomorphic trees of order 15 and the second data set consists of 500 non-isomorphic trees of order 18.
 
-### **Regression--{All, Subset}--{Full_Set, Sampling}.ipynb**
+### **Regression--{All, Subset}--{Full_Set, Sampling}.ipynb** and **Regression--Tree--{All, Subset}--{Full_Set, Sampling}.ipynb**
 
-These Jupyter notebooks use statistical learning methods to predict the Stirling numbers of the first kind using $\log10(P (T ; 2, 1))$ (base 10 logarithm of the distinguishing polynomial of $T$ evaluated at $x = 2$ and $y =1$), global closeness centrality, global betweenness centrality, and class as predictors.
+These Jupyter notebooks use statistical learning methods to predict the Stirling numbers of the first kind using $\log10(P (T ; 2, 1))$ (base 10 logarithm of the distinguishing polynomial of $T$ evaluated at $x = 2$ and $y =1$), global closeness centrality, global betweenness centrality, and class as predictors. Since $\log10(P (T ; 2, 1))$ is the main predictor, we also considered the subset of these predictors that excludes $\log10(P (T ; 2, 1))$. 
 
 ### **tree\_functions\_2.py**
 
@@ -85,6 +85,34 @@ All the functions defined by the authors and used in the above notebooks are in 
         <td> <img src='https://github.com/drdeford/Stirling_Trees/blob/master/CLS_3.gif' width = '200'> </td>
         <td> <img src='https://github.com/drdeford/Stirling_Trees/blob/master/CLS_4.gif' width = '200'> </td>
     </tr>
+</table>
+</center>
+
+## Different Scores for Various Regression and Tree-based Methods
+
+### Regression
+
+<center> 
+<table>
+    <tr>
+        <td> <img src='https://github.com/drdeford/Stirling_Trees/blob/master/regression_all_full.png' width = '200'><BR> All trees of order 12 <BR> All four predictors</td>
+        <td> <img src='https://github.com/drdeford/Stirling_Trees/blob/master/regression_all_sampling.png' width = '200'><BR >A sample of trees of order 18 <BR> All four predictors </td>
+        <td> <img src='https://github.com/drdeford/Stirling_Trees/blob/master/regression_subset_full.png' width = '200'><BR> All trees of order 12 <BR> Three of the predictors</td>
+        <td> <img src='https://github.com/drdeford/Stirling_Trees/blob/master/regression_subset_sampling.png' width = '200'><BR >A sample of trees of order 18 <BR> Three of the predictors  </td>
+    </tr>  
+</table>
+</center>
+
+### Tree-Based
+
+<center> 
+<table>
+    <tr>
+        <td> <img src='https://github.com/drdeford/Stirling_Trees/blob/master/regression_tree_all_full.png' width = '200'><BR> All trees of order 12 <BR> All four predictors</td>
+        <td> <img src='https://github.com/drdeford/Stirling_Trees/blob/master/regression_tree_all_sampling.png' width = '200'><BR >A sample of trees of order 18 <BR> All four predictors </td>
+        <td> <img src='https://github.com/drdeford/Stirling_Trees/blob/master/regression_tree_subset_full.png' width = '200'><BR> All trees of order 12 <BR> Three of the predictors</td>
+        <td> <img src='https://github.com/drdeford/Stirling_Trees/blob/master/regression_tree_subset_sampling.png' width = '200'><BR >A sample of trees of order 18 <BR> Three of the predictors  </td>
+    </tr>  
 </table>
 </center>
   
