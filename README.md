@@ -82,9 +82,20 @@ These Jupyter notebooks use statistical learning methods to classify trees (into
 
 These Jupyter notebooks use statistical learning methods to predict the Stirling numbers of the first kind using $\log10(P (T ; 2, 1))$ (base 10 logarithm of the distinguishing polynomial of $T$ evaluated at $x = 2$ and $y =1$), global closeness centrality, global betweenness centrality, and class as predictors. Since $\log10(P (T ; 2, 1))$ is the main predictor, we also considered the subset of these predictors that excludes $\log10(P (T ; 2, 1))$. 
 
-### **Regression--Data_Visualization--R.ipynb**
+### **Classification--Data_Visualization--R.ipynb** and **Regression--Data_Visualization--R.ipynb**
 
-This Jupyter notebook in R creates plots for comparing training and testing scores for various regression and tree-based methods used in the notebooks in the previous set of Jupyter notebooks. 
+These Jupyter notebooks in R create plots for comparing training and testing scores for various tree-based classification, regression and tree-based regression methods used in these notebooks in the previous set of Jupyter notebooks. 
+
+#### Classification
+
+<center> 
+<table>
+    <tr>
+        <td> <img src='https://github.com/drdeford/Stirling_Trees/blob/master/classification_all_full.png' width = '200'><BR> All trees of order 12 <BR> All four predictors</td>
+        <td> <img src='https://github.com/drdeford/Stirling_Trees/blob/master/classification_all_sampling.png' width = '200'><BR >A sample of trees of order 18 <BR> All four predictors </td>
+    </tr>  
+</table>
+</center>
 
 #### Regression
 
