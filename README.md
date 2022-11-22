@@ -1,5 +1,4 @@
 # Stirling Numbers of Uniform Trees and Related Computational Experiments
-(under development)
 
 ## Code
 
