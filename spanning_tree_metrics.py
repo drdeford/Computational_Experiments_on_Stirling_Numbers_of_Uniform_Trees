@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Jun 12 11:02:47 2019
-
-@author: daryl
-"""
-
 from FKT import *
 
 import networkx as nx #Requires at least networkx 2.3+
