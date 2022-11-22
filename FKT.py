@@ -1,7 +1,4 @@
 """
-Created on Wed May 15 11:54:57 2019
-@author: daryl
-
 #######################################################################
 # BASED On An Original Sage Version by:
 # AUTHOR: Dr. Christian Schridde
