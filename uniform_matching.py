@@ -1,11 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Wed May 22 16:20:12 2019
-
-@author: ddeford
-"""
-
 from FKT import *
 
 import networkx as nx #Requires at least networkx 2.3+
