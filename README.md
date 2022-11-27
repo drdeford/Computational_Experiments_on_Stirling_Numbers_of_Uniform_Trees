@@ -43,6 +43,7 @@ This Python script is used to generate the autocorrelation plots for $p = 0.1$, 
 
 #### Global Betweenness Centrality
 
+
 <center> 
 <table>
     <tr>
