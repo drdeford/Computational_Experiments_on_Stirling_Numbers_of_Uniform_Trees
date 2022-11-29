@@ -26,7 +26,7 @@ An implementation of an MCMC version of the cycle basis walk on spanning trees w
 
 ### **Probabistic\_Approach.ipynb**
 
-In this notebook, a random tree $T$ is generated. For this tree, $m$ trial are ran. At each trial a $\\{0,1\\}$-column vectors with random entries is generated and a trial is considered a "success" if the condition that it contains exactly $k-1$ many $1$'s is met. The code for generating result for $n \in \\{7, 8, \ldots, 15\\}$ and $m \in \\{10000, 20000\\}$ are included. Moreover, the code produces average running times for $n \in \\{7, \ldots, 15, 24, 25, 26\\}$ and $m \in \\{10000, 20000\\}$. 
+In this notebook, a random tree $T$ is generated. For this tree, $m$ trials are ran. For each trial, a $\\{0,1\\}$-column vectors with random entries is generated and a trial is considered a "success" if the condition that it contains exactly $k-1$ many $1$'s is met. The code for generating results for $n \in \\{7, 8, \ldots, 15\\}$ and $m \in \\{10000, 20000\\}$ are included. Moreover, the code produces average running times for $n \in \\{7, \ldots, 15, 24, 25, 26\\}$ and $m \in \\{10000, 20000\\}$. 
 
 ### **probabilistic\_approach--average\_running\_times.py** 
 
@@ -35,7 +35,7 @@ This Python script is used to compute the average running times for $n \in \\{5,
 
 ### **Uniform\_Trees--Autocorrelation.ipynb**
 
-This notebook generates the autocorrelation plots for uniform sampling from the tree space based on degree, maximum degreem, betweenness, and closeness with $100000$ iterations, lags up to $1000000$, $p = 0.01$, $q \in \\{0.2, 0.4, 0.6, 0.8\\}$, and $r \in \\{0.2, 0.4, 0.6, 0.8\\}$, where each point is displayed in increments of $50$. The blue ribbons in these plots are made of the $95\%$ confidence intervals where the standard deviation is computed according to Bartlett’s formula ([statsmodels.graphics.tsaplots.plot\_acf](https://www.statsmodels.org/dev/generated/statsmodels.graphics.tsaplots.plot_acf.html)).
+This notebook generates the autocorrelation plots for uniform sampling from the tree space based on degree, maximum degree, betweenness, and closeness with $100000$ iterations, lags up to $1000000$, $p = 0.01$, $q \in \\{0.2, 0.4, 0.6, 0.8\\}$, and $r \in \\{0.2, 0.4, 0.6, 0.8\\}$, where each point is displayed in increments of $50$. The blue ribbons in these plots are made of the $95\%$ confidence intervals where the standard deviation is computed according to Bartlett’s formula ([statsmodels.graphics.tsaplots.plot\_acf](https://www.statsmodels.org/dev/generated/statsmodels.graphics.tsaplots.plot_acf.html)).
 
 ### **uniform_trees--autocorrelation--longer_runs.py**
 
