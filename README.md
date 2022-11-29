@@ -47,13 +47,13 @@ This Python script is used to generate the autocorrelation plots for $p = 0.1$, 
 <center> 
 <table>
     <tr>
-        <td> <img src='https://github.com/drdeford/Computational_Experiments_on_Stirling_Numbers_of_Uniform_Trees/blob/master/BTW_0.gif' width = '200'></td>
-        <td> <img src='https://github.com/drdeford/Computational_Experiments_on_Stirling_Numbers_of_Uniform_Trees/blob/master/BTW_1.gif' width = '200'> </td>
-        <td> <img src='https://github.com/drdeford/Computational_Experiments_on_Stirling_Numbers_of_Uniform_Trees/blob/master/BTW_2.gif' width = '200'> </td>
+        <td> <img src='https://github.com/drdeford/Computational_Experiments_on_Stirling_Numbers_of_Uniform_Trees/blob/master/Figures/BTW_0.gif' width = '200'></td>
+        <td> <img src='https://github.com/drdeford/Computational_Experiments_on_Stirling_Numbers_of_Uniform_Trees/blob/master/Figures/BTW_1.gif' width = '200'> </td>
+        <td> <img src='https://github.com/drdeford/Computational_Experiments_on_Stirling_Numbers_of_Uniform_Trees/blob/master/Figures/BTW_2.gif' width = '200'> </td>
     </tr>
     <tr>
-        <td> <img src='https://github.com/drdeford/Computational_Experiments_on_Stirling_Numbers_of_Uniform_Trees/blob/master/BTW_3.gif' width = '200'> </td>
-        <td> <img src='https://github.com/drdeford/Computational_Experiments_on_Stirling_Numbers_of_Uniform_Trees/blob/master/BTW_4.gif' width = '200'> </td>
+        <td> <img src='https://github.com/drdeford/Computational_Experiments_on_Stirling_Numbers_of_Uniform_Trees/blob/master/Figures/BTW_3.gif' width = '200'> </td>
+        <td> <img src='https://github.com/drdeford/Computational_Experiments_on_Stirling_Numbers_of_Uniform_Trees/blob/master/Figures/BTW_4.gif' width = '200'> </td>
     </tr>    
 </table>
 </center>
@@ -63,13 +63,13 @@ This Python script is used to generate the autocorrelation plots for $p = 0.1$, 
 <center> 
 <table>
     <tr>
-        <td> <img src='https://github.com/drdeford/Computational_Experiments_on_Stirling_Numbers_of_Uniform_Trees/blob/master/CLS_0.gif' width = '200'></td>
-        <td> <img src='https://github.com/drdeford/Computational_Experiments_on_Stirling_Numbers_of_Uniform_Trees/blob/master/CLS_1.gif' width = '200'> </td>
-        <td> <img src='https://github.com/drdeford/Computational_Experiments_on_Stirling_Numbers_of_Uniform_Trees/blob/master/CLS_2.gif' width = '200'> </td>
+        <td> <img src='https://github.com/drdeford/Computational_Experiments_on_Stirling_Numbers_of_Uniform_Trees/blob/master/Figures/CLS_0.gif' width = '200'></td>
+        <td> <img src='https://github.com/drdeford/Computational_Experiments_on_Stirling_Numbers_of_Uniform_Trees/blob/master/Figures/CLS_1.gif' width = '200'> </td>
+        <td> <img src='https://github.com/drdeford/Computational_Experiments_on_Stirling_Numbers_of_Uniform_Trees/blob/master/Figures/CLS_2.gif' width = '200'> </td>
     </tr>
     <tr>
-        <td> <img src='https://github.com/drdeford/Computational_Experiments_on_Stirling_Numbers_of_Uniform_Trees/blob/master/CLS_3.gif' width = '200'> </td>
-        <td> <img src='https://github.com/drdeford/Computational_Experiments_on_Stirling_Numbers_of_Uniform_Trees/blob/master/CLS_4.gif' width = '200'> </td>
+        <td> <img src='https://github.com/drdeford/Computational_Experiments_on_Stirling_Numbers_of_Uniform_Trees/blob/master/Figures/CLS_3.gif' width = '200'> </td>
+        <td> <img src='https://github.com/drdeford/Computational_Experiments_on_Stirling_Numbers_of_Uniform_Trees/blob/master/Figures/CLS_4.gif' width = '200'> </td>
     </tr>
 </table>
 </center> 
@@ -91,8 +91,8 @@ These Jupyter notebooks in R create plots for comparing training and testing sco
 <center> 
 <table>
     <tr>
-        <td> <img src='https://github.com/drdeford/Computational_Experiments_on_Stirling_Numbers_of_Uniform_Trees/blob/master/classification_all_full.png' width = '200'><BR> All trees of order 12 <BR> All four predictors</td>
-        <td> <img src='https://github.com/drdeford/Computational_Experiments_on_Stirling_Numbers_of_Uniform_Trees/blob/master/classification_all_sampling.png' width = '200'><BR >A sample of trees of order 18 <BR> All four predictors </td>
+        <td> <img src='https://github.com/drdeford/Computational_Experiments_on_Stirling_Numbers_of_Uniform_Trees/blob/master/Figures/classification_all_full.png' width = '200'><BR> All trees of order 12 <BR> All four predictors</td>
+        <td> <img src='https://github.com/drdeford/Computational_Experiments_on_Stirling_Numbers_of_Uniform_Trees/blob/master/Figures/classification_all_sampling.png' width = '200'><BR >A sample of trees of order 18 <BR> All four predictors </td>
     </tr>  
 </table>
 </center>
@@ -102,10 +102,10 @@ These Jupyter notebooks in R create plots for comparing training and testing sco
 <center> 
 <table>
     <tr>
-        <td> <img src='https://github.com/drdeford/Computational_Experiments_on_Stirling_Numbers_of_Uniform_Trees/blob/master/regression_all_full.png' width = '200'><BR> All trees of order 12 <BR> All four predictors</td>
-        <td> <img src='https://github.com/drdeford/Computational_Experiments_on_Stirling_Numbers_of_Uniform_Trees/blob/master/regression_all_sampling.png' width = '200'><BR >A sample of trees of order 18 <BR> All four predictors </td>
-        <td> <img src='https://github.com/drdeford/Computational_Experiments_on_Stirling_Numbers_of_Uniform_Trees/blob/master/regression_subset_full.png' width = '200'><BR> All trees of order 12 <BR> Three of the predictors</td>
-        <td> <img src='https://github.com/drdeford/Computational_Experiments_on_Stirling_Numbers_of_Uniform_Trees/blob/master/regression_subset_sampling.png' width = '200'><BR >A sample of trees of order 18 <BR> Three of the predictors  </td>
+        <td> <img src='https://github.com/drdeford/Computational_Experiments_on_Stirling_Numbers_of_Uniform_Trees/blob/master/Figures/regression_all_full.png' width = '200'><BR> All trees of order 12 <BR> All four predictors</td>
+        <td> <img src='https://github.com/drdeford/Computational_Experiments_on_Stirling_Numbers_of_Uniform_Trees/blob/master/Figures/regression_all_sampling.png' width = '200'><BR >A sample of trees of order 18 <BR> All four predictors </td>
+        <td> <img src='https://github.com/drdeford/Computational_Experiments_on_Stirling_Numbers_of_Uniform_Trees/blob/master/Figures/regression_subset_full.png' width = '200'><BR> All trees of order 12 <BR> Three of the predictors</td>
+        <td> <img src='https://github.com/drdeford/Computational_Experiments_on_Stirling_Numbers_of_Uniform_Trees/blob/master/Figures/regression_subset_sampling.png' width = '200'><BR >A sample of trees of order 18 <BR> Three of the predictors  </td>
     </tr>  
 </table>
 </center>
@@ -115,10 +115,10 @@ These Jupyter notebooks in R create plots for comparing training and testing sco
 <center> 
 <table>
     <tr>
-        <td> <img src='https://github.com/drdeford/Computational_Experiments_on_Stirling_Numbers_of_Uniform_Trees/blob/master/regression_tree_all_full.png' width = '200'><BR> All trees of order 12 <BR> All four predictors</td>
-        <td> <img src='https://github.com/drdeford/Computational_Experiments_on_Stirling_Numbers_of_Uniform_Trees/blob/master/regression_tree_all_sampling.png' width = '200'><BR >A sample of trees of order 18 <BR> All four predictors </td>
-        <td> <img src='https://github.com/drdeford/Computational_Experiments_on_Stirling_Numbers_of_Uniform_Trees/blob/master/regression_tree_subset_full.png' width = '200'><BR> All trees of order 12 <BR> Three of the predictors</td>
-        <td> <img src='https://github.com/drdeford/Computational_Experiments_on_Stirling_Numbers_of_Uniform_Trees/blob/master/regression_tree_subset_sampling.png' width = '200'><BR >A sample of trees of order 18 <BR> Three of the predictors  </td>
+        <td> <img src='https://github.com/drdeford/Computational_Experiments_on_Stirling_Numbers_of_Uniform_Trees/blob/master/Figures/regression_tree_all_full.png' width = '200'><BR> All trees of order 12 <BR> All four predictors</td>
+        <td> <img src='https://github.com/drdeford/Computational_Experiments_on_Stirling_Numbers_of_Uniform_Trees/blob/master/Figures/regression_tree_all_sampling.png' width = '200'><BR >A sample of trees of order 18 <BR> All four predictors </td>
+        <td> <img src='https://github.com/drdeford/Computational_Experiments_on_Stirling_Numbers_of_Uniform_Trees/blob/master/Figures/regression_tree_subset_full.png' width = '200'><BR> All trees of order 12 <BR> Three of the predictors</td>
+        <td> <img src='https://github.com/drdeford/Computational_Experiments_on_Stirling_Numbers_of_Uniform_Trees/blob/master/Figures/regression_tree_subset_sampling.png' width = '200'><BR >A sample of trees of order 18 <BR> Three of the predictors  </td>
     </tr>  
 </table>
 </center>
