@@ -2,7 +2,7 @@
 
 ## Code
 
-Python code for sampling and evaluating cycle covers of trees.
+Python code for sampling and evaluating cycle covers of trees. The sections below provide brief descriptions of the code inside each script. 
 
 ### **FKT.py**
 
