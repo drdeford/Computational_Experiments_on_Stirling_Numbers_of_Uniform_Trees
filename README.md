@@ -80,7 +80,7 @@ These Jupyter notebooks use statistical learning methods to classify trees (into
 
 ### **Classification--All--Uniform\_Sampling.ipynb**
 
-These Jupyter notebooks use statistical learning methods to classify trees (into two classes: path-like or star-like) with global betweenness centrality (**Betweenness**), global closeness centrality (**Closeness**), the Stirling numbers of the first kind (**Stirling**). The data set used in this notebook consists of 500 non-isomorphic trees of order 18 sampled uniformly from the space of all such trees.
+These Jupyter notebooks use statistical learning methods to classify trees (into two classes: path-like or star-like) with global betweenness centrality (**Betweenness**), global closeness centrality (**Closeness**), the Stirling numbers of the first kind (**Stirling**). The data set used in this notebook consists of 500 trees of order 18 sampled uniformly from the space of all such trees.
 
 ### **Regression--{All, Subset}--{Full_Set, Sampling, Uniform\_Sampling}.ipynb** and **Regression--Tree--{All, Subset}--{Full_Set, Sampling, Uniform\_Sampling}.ipynb**
 
