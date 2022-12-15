@@ -76,9 +76,13 @@ This Python script is used to generate the autocorrelation plots for $p = 0.1$, 
 
 ### **Classification--{Betweenness, Closeness, Stirling, All}--{Full_Set, Sampling}.ipynb**
 
-These Jupyter notebooks use statistical learning methods to classify trees (into two classes: path-like or star-like) with global betweenness centrality (**Betweenness**), global closeness centrality (**Closeness**), the Stirling numbers of the first kind (**Stirling**), or all three (**All**) as predictors. Two different data sets are used in these notebooks: The first data set (**Full_Set**) consists of all non-isomorphic trees of order 15 and the second data set consists of 500 non-isomorphic trees of order 18.
+These Jupyter notebooks use statistical learning methods to classify trees (into two classes: path-like or star-like) with global betweenness centrality (**Betweenness**), global closeness centrality (**Closeness**), the Stirling numbers of the first kind (**Stirling**), or all three (**All**) as predictors. Two different data sets are used in these notebooks: The first data set (**Full_Set**) consists of all non-isomorphic trees of order 15 and the second data set consists of 500 non-isomorphic trees of order 18 sampled using `networkx.nonisomorphic_trees` function.
 
-### **Regression--{All, Subset}--{Full_Set, Sampling}.ipynb** and **Regression--Tree--{All, Subset}--{Full_Set, Sampling}.ipynb**
+### **Classification--All--Uniform\_Sampling.ipynb**
+
+These Jupyter notebooks use statistical learning methods to classify trees (into two classes: path-like or star-like) with global betweenness centrality (**Betweenness**), global closeness centrality (**Closeness**), the Stirling numbers of the first kind (**Stirling**). The data set used in this notebook consists of 500 non-isomorphic trees of order 18 sampled uniformly from the space of all such trees.
+
+### **Regression--{All, Subset}--{Full_Set, Sampling, Uniform\_Sampling}.ipynb** and **Regression--Tree--{All, Subset}--{Full_Set, Sampling, Uniform\_Sampling}.ipynb**
 
 These Jupyter notebooks use statistical learning methods to predict the Stirling numbers of the first kind using $\log10(P (T ; 2, 1))$ (base 10 logarithm of the distinguishing polynomial of $T$ evaluated at $x = 2$ and $y =1$), global closeness centrality, global betweenness centrality, and class as predictors. Since $\log10(P (T ; 2, 1))$ is the main predictor, we also considered the subset of these predictors that excludes $\log10(P (T ; 2, 1))$. 
 
@@ -91,8 +95,9 @@ These Jupyter notebooks in R create plots for comparing training and testing sco
 <center> 
 <table>
     <tr>
-        <td> <img src='https://github.com/drdeford/Computational_Experiments_on_Stirling_Numbers_of_Uniform_Trees/blob/master/Figures/classification_all_full.png' width = '200'><BR> All trees of order 12 <BR> All four predictors</td>
-        <td> <img src='https://github.com/drdeford/Computational_Experiments_on_Stirling_Numbers_of_Uniform_Trees/blob/master/Figures/classification_all_sampling.png' width = '200'><BR >A sample of trees of order 18 <BR> All four predictors </td>
+        <td> <img src='https://github.com/drdeford/Computational_Experiments_on_Stirling_Numbers_of_Uniform_Trees/blob/master/Figures/classification_all_full.png' width = '200'><BR> All trees of order 12 <BR> <BR> All four predictors <BR></td>
+        <td> <img src='https://github.com/drdeford/Computational_Experiments_on_Stirling_Numbers_of_Uniform_Trees/blob/master/Figures/classification_all_sampling.png' width = '200'><BR> A sample of trees of order 18 <BR> using `nx.nonisomorphic_trees` <BR> All four predictors </td>
+         <td> <img src='https://github.com/drdeford/Computational_Experiments_on_Stirling_Numbers_of_Uniform_Trees/blob/master/Figures/classification_all_unifom_sampling.png' width = '200'><BR> A sample of trees of order 18 <BR> sampled uniformly <BR> All four predictors </td>
     </tr>  
 </table>
 </center>
@@ -102,23 +107,35 @@ These Jupyter notebooks in R create plots for comparing training and testing sco
 <center> 
 <table>
     <tr>
-        <td> <img src='https://github.com/drdeford/Computational_Experiments_on_Stirling_Numbers_of_Uniform_Trees/blob/master/Figures/regression_all_full.png' width = '200'><BR> All trees of order 12 <BR> All four predictors</td>
-        <td> <img src='https://github.com/drdeford/Computational_Experiments_on_Stirling_Numbers_of_Uniform_Trees/blob/master/Figures/regression_all_sampling.png' width = '200'><BR >A sample of trees of order 18 <BR> All four predictors </td>
-        <td> <img src='https://github.com/drdeford/Computational_Experiments_on_Stirling_Numbers_of_Uniform_Trees/blob/master/Figures/regression_subset_full.png' width = '200'><BR> All trees of order 12 <BR> Three of the predictors</td>
-        <td> <img src='https://github.com/drdeford/Computational_Experiments_on_Stirling_Numbers_of_Uniform_Trees/blob/master/Figures/regression_subset_sampling.png' width = '200'><BR >A sample of trees of order 18 <BR> Three of the predictors  </td>
+        <td> <img src='https://github.com/drdeford/Computational_Experiments_on_Stirling_Numbers_of_Uniform_Trees/blob/master/Figures/regression_all_full.png' width = '200'><BR> All trees of order 12 <BR> <BR> All four predictors</td>
+        <td> <img src='https://github.com/drdeford/Computational_Experiments_on_Stirling_Numbers_of_Uniform_Trees/blob/master/Figures/regression_all_sampling.png' width = '200'><BR> A sample of trees of order 18 <BR> using `nx.nonisomorphic_trees` <BR> All four predictors </td>
+        <td> <img src='https://github.com/drdeford/Computational_Experiments_on_Stirling_Numbers_of_Uniform_Trees/blob/master/Figures/regression_all_uniform_sampling.png' width = '200'><BR> A sample of trees of order 18 <BR> sampled uniformly <BR> All four predictors </td>
+    </tr>  
+</table>
+<table>
+    <tr>
+        <td> <img src='https://github.com/drdeford/Computational_Experiments_on_Stirling_Numbers_of_Uniform_Trees/blob/master/Figures/regression_subset_full.png' width = '200'><BR> All trees of order 12 <BR> <BR> Three of the predictors</td>
+        <td> <img src='https://github.com/drdeford/Computational_Experiments_on_Stirling_Numbers_of_Uniform_Trees/blob/master/Figures/regression_subset_sampling.png' width = '200'><BR> A sample of trees of order 18 <BR> using `nx.nonisomorphic_trees` <BR> Three of the predictors </td>
+        <td> <img src='https://github.com/drdeford/Computational_Experiments_on_Stirling_Numbers_of_Uniform_Trees/blob/master/Figures/regression_subset_uniform_sampling.png' width = '200'><BR> A sample of trees of order 18 <BR> sampled uniformly <BR> Three of the predictors  </td>
     </tr>  
 </table>
 </center>
 
 #### Tree-Based
-
+            
 <center> 
 <table>
     <tr>
-        <td> <img src='https://github.com/drdeford/Computational_Experiments_on_Stirling_Numbers_of_Uniform_Trees/blob/master/Figures/regression_tree_all_full.png' width = '200'><BR> All trees of order 12 <BR> All four predictors</td>
-        <td> <img src='https://github.com/drdeford/Computational_Experiments_on_Stirling_Numbers_of_Uniform_Trees/blob/master/Figures/regression_tree_all_sampling.png' width = '200'><BR >A sample of trees of order 18 <BR> All four predictors </td>
-        <td> <img src='https://github.com/drdeford/Computational_Experiments_on_Stirling_Numbers_of_Uniform_Trees/blob/master/Figures/regression_tree_subset_full.png' width = '200'><BR> All trees of order 12 <BR> Three of the predictors</td>
-        <td> <img src='https://github.com/drdeford/Computational_Experiments_on_Stirling_Numbers_of_Uniform_Trees/blob/master/Figures/regression_tree_subset_sampling.png' width = '200'><BR >A sample of trees of order 18 <BR> Three of the predictors  </td>
+        <td> <img src='https://github.com/drdeford/Computational_Experiments_on_Stirling_Numbers_of_Uniform_Trees/blob/master/Figures/regression_tree_all_full.png' width = '200'><BR> All trees of order 12 <BR> <BR> All four predictors</td>
+        <td> <img src='https://github.com/drdeford/Computational_Experiments_on_Stirling_Numbers_of_Uniform_Trees/blob/master/Figures/regression_tree_all_sampling.png' width = '200'><BR> A sample of trees of order 18 <BR> using `nx.nonisomorphic_trees` <BR> All four predictors </td>
+        <td> <img src='https://github.com/drdeford/Computational_Experiments_on_Stirling_Numbers_of_Uniform_Trees/blob/master/Figures/regression_tree_all_uniform_sampling.png' width = '200'><BR> A sample of trees of order 18 <BR> sampled uniformly <BR> All four predictors </td>
+    </tr>  
+</table>
+<table>
+    <tr>
+        <td> <img src='https://github.com/drdeford/Computational_Experiments_on_Stirling_Numbers_of_Uniform_Trees/blob/master/Figures/regression_tree_subset_full.png' width = '200'><BR> All trees of order 12 <BR> <BR> Three of the predictors</td>
+        <td> <img src='https://github.com/drdeford/Computational_Experiments_on_Stirling_Numbers_of_Uniform_Trees/blob/master/Figures/regression_subset_sampling.png' width = '200'><BR> A sample of trees of order 18 <BR> using `nx.nonisomorphic_trees` <BR> Three of the predictors </td>
+        <td> <img src='https://github.com/drdeford/Computational_Experiments_on_Stirling_Numbers_of_Uniform_Trees/blob/master/Figures/regression_tree_subset_uniform_sampling.png' width = '200'><BR> A sample of trees of order 18 <BR> sampled uniformly <BR> Three of the predictors  </td>
     </tr>  
 </table>
 </center>
