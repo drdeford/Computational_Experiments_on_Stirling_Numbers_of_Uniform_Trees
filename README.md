@@ -74,6 +74,14 @@ This Python script is used to generate the autocorrelation plots for $p = 0.1$, 
 </table>
 </center> 
 
+### **probabilistic\_approach--uniform\_sampling.py**
+
+This script computes the difference between the exact value of the $k$-th Stirling number and its approximation using the probabilistic approach for 100 trees of order $n$ uniformly sampled using Wilson algorithm for $n \in \\{7, \ldots, 19\\}$ and $n - 2 \geq k \geq \lceil \frac{n}{2} \rceil$ and returns separate `.csv` files for each $n$.
+
+### **analysis--probabilistic\_approach--uniform\_sampling.py**
+
+This script computes the mean, standard deviation, and skewness of the differences computed in **probabilistic\_approach--uniform\_sampling.py** for each $n$ and each $k$.
+
 ### **Classification--{Betweenness, Closeness, Stirling, All}--{Full_Set, Sampling}.ipynb**
 
 These Jupyter notebooks use statistical learning methods to classify trees (into two classes: path-like or star-like) with global betweenness centrality (**Betweenness**), global closeness centrality (**Closeness**), the Stirling numbers of the first kind (**Stirling**), or all three (**All**) as predictors. Two different data sets are used in these notebooks: The first data set (**Full_Set**) consists of all non-isomorphic trees of order 15 and the second data set consists of 500 non-isomorphic trees of order 18 sampled using `networkx.nonisomorphic_trees` function.
