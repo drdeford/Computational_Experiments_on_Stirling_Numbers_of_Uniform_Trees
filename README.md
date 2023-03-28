@@ -6,7 +6,7 @@ Python code for sampling and evaluating cycle covers of trees. The sections belo
 
 ### **FKT.py**
 
-An implementation of the FKT algorithm for constructing a pfaffian orientation of a planar graph.
+An implementation of the FKT algorithm for constructing a Pfaffian orientation of a planar graph.
 
 ### **uniform\_matching.py**
 
@@ -84,7 +84,7 @@ This script computes the mean, standard deviation, and skewness of the differenc
 
 ### **Classification--{Betweenness, Closeness, Stirling, All}--{Full_Set, Sampling}.ipynb**
 
-These Jupyter notebooks use statistical learning methods to classify trees (into two classes: path-like or star-like) with global betweenness centrality (**Betweenness**), global closeness centrality (**Closeness**), the Stirling numbers of the first kind (**Stirling**), or all three (**All**) as predictors. Two different data sets are used in these notebooks: The first data set (**Full_Set**) consists of all non-isomorphic trees of order 15 and the second data set consists of 500 non-isomorphic trees of order 18 sampled using `networkx.nonisomorphic_trees` function.
+These Jupyter notebooks use statistical learning methods to classify trees (into two classes: path-like or star-like) with global betweenness centrality (**Betweenness**), global closeness centrality (**Closeness**), the Stirling numbers of the first kind (**Stirling**), or all three (**All**) as predictors. Two different data sets are used in these notebooks: The first data set (**Full_Set**) consists of all non-isomorphic trees of order 12 and the second data set consists of 500 non-isomorphic trees of order 18 sampled using `networkx.nonisomorphic_trees` function.
 
 ### **Classification--All--Uniform\_Sampling.ipynb**
 
