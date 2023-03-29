@@ -1,8 +1,8 @@
 # Stirling Numbers of Uniform Trees and Related Computational Experiments
 
-## Code
+Python code for sampling and evaluating cycle covers of trees. The sections below provide brief descriptions of the code inside each script or notebook in each subfolder of Scripts. 
 
-Python code for sampling and evaluating cycle covers of trees. The sections below provide brief descriptions of the code inside each script. 
+## ./Scripts/Exact\_Computation/
 
 ### **FKT.py**
 
@@ -24,14 +24,27 @@ A method for enumerating the $k$-th Stirling numbers of the first kind for trees
 
 An implementation of an MCMC version of the cycle basis walk on spanning trees with Metropolis-Hastings for interpolating between stars and paths.
 
-### **Probabistic\_Approach.ipynb**
+## ./Scripts/Probabilistic\_Approach/
+
+### **Probabilistic\_Approach.ipynb**
 
 In this notebook, a random tree $T$ is generated. For this tree, $m$ trials are ran. For each trial, a $\\{0,1\\}$-column vectors with random entries is generated and a trial is considered a "success" if the condition that it contains exactly $k-1$ many $1$'s is met. The code for generating results for $n \in \\{7, 8, \ldots, 15\\}$ and $m \in \\{10000, 20000\\}$ are included. Moreover, the code produces average running times for $n \in \\{7, \ldots, 15, 24, 25, 26\\}$ and $m \in \\{10000, 20000\\}$. 
 
 ### **probabilistic\_approach--average\_running\_times.py** 
 
 This Python script is used to compute the average running times for $n \in \\{5, 6, \ldots, 30\\}$ and $m \in \\{10000, 20000\\}$ for the code in the 
-**Probabistic\_Approach.ipynb** notebook. Running time for this Python script is long.
+**Probabilistic\_Approach.ipynb** notebook. Running time for this Python script is long.
+
+
+### **probabilistic\_approach--uniform\_sampling.py**
+
+This script computes the difference between the exact value of the $k$-th Stirling number and its approximation using the probabilistic approach for 100 trees of order $n$ uniformly sampled using Wilson algorithm for $n \in \\{7, \ldots, 19\\}$ and $n - 2 \geq k \geq \lceil \frac{n}{2} \rceil$ and returns separate `.csv` files for each $n$.
+
+### **analysis--probabilistic\_approach--uniform\_sampling.py**
+
+This script computes the mean, standard deviation, and skewness of the differences computed in **probabilistic\_approach--uniform\_sampling.py** for each $n$ and each $k$.
+
+## ./Scripts/Autocorrelation/
 
 ### **Uniform\_Trees--Autocorrelation.ipynb**
 
@@ -40,6 +53,7 @@ This notebook generates the autocorrelation plots for uniform sampling from the 
 ### **uniform_trees--autocorrelation--longer_runs.py**
 
 This Python script is used to generate the autocorrelation plots for $p = 0.1$, $q, r \in \\{0.2, 0.4, 0.6, 0.8\\}$, and $10000000$ iterations for the code in the **Uniform\_Trees--Autocorrelation.ipynb** notebook. Running time for this Python script is very long. 
+
 
 #### Global Betweenness Centrality
 
@@ -74,13 +88,7 @@ This Python script is used to generate the autocorrelation plots for $p = 0.1$, 
 </table>
 </center> 
 
-### **probabilistic\_approach--uniform\_sampling.py**
-
-This script computes the difference between the exact value of the $k$-th Stirling number and its approximation using the probabilistic approach for 100 trees of order $n$ uniformly sampled using Wilson algorithm for $n \in \\{7, \ldots, 19\\}$ and $n - 2 \geq k \geq \lceil \frac{n}{2} \rceil$ and returns separate `.csv` files for each $n$.
-
-### **analysis--probabilistic\_approach--uniform\_sampling.py**
-
-This script computes the mean, standard deviation, and skewness of the differences computed in **probabilistic\_approach--uniform\_sampling.py** for each $n$ and each $k$.
+## ./Scripts/Classification\_Single\_Predictor/ and ./Scripts/Classification_all_predictors/
 
 ### **Classification--{Betweenness, Closeness, Stirling, All}--{Full_Set, Sampling}.ipynb**
 
@@ -90,9 +98,13 @@ These Jupyter notebooks use statistical learning methods to classify trees (into
 
 These Jupyter notebooks use statistical learning methods to classify trees (into two classes: path-like or star-like) with global betweenness centrality (**Betweenness**), global closeness centrality (**Closeness**), the Stirling numbers of the first kind (**Stirling**). The data set used in this notebook consists of 500 trees of order 18 sampled uniformly from the space of all such trees.
 
+## ./Scripts/Regression_Subset_Predictors/ and ./Scripts/Regression_all_predictors/
+
 ### **Regression--{All, Subset}--{Full_Set, Sampling, Uniform\_Sampling}.ipynb** and **Regression--Tree--{All, Subset}--{Full_Set, Sampling, Uniform\_Sampling}.ipynb**
 
 These Jupyter notebooks use statistical learning methods to predict the Stirling numbers of the first kind using $\log10(P (T ; 2, 1))$ (base 10 logarithm of the distinguishing polynomial of $T$ evaluated at $x = 2$ and $y =1$), global closeness centrality, global betweenness centrality, and class as predictors. Since $\log10(P (T ; 2, 1))$ is the main predictor, we also considered the subset of these predictors that excludes $\log10(P (T ; 2, 1))$. 
+
+## ./Scripts/
 
 ### **Classification--Data_Visualization--R.ipynb** and **Regression--Data_Visualization--R.ipynb**
 
